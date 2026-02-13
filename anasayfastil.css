@@ -1,0 +1,525 @@
+:root {
+    --primary-color: #1B2A4E;
+    --secondary-color: #E74C3C;
+    --accent-color: #5DADE2;
+    --light-bg: #EBF5FB;
+    --dark-text: #0D1B2A;
+    --light-text: #fff;
+    --shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    color: var(--dark-text);
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+/* Hero Bölümü */
+.hero-bolumu {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 50%, #1B2A4E 100%);
+    color: var(--light-text);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-icerik {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-baslik {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-alt-baslik {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.2s;
+    animation-fill-mode: both;
+}
+
+.hero-btn {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    margin-right: 15px;
+    animation: fadeInUp 1s ease 0.4s;
+    animation-fill-mode: both;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #C0392B;
+}
+
+.hero-btn-outline {
+    background-color: transparent;
+    color: var(--light-text);
+    border: 2px solid var(--accent-color);
+}
+
+.hero-btn-outline:hover {
+    background-color: var(--accent-color);
+    color: var(--light-text);
+}
+
+.hero-gorsel {
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+    z-index: 2;
+}
+
+.hero-gorsel img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Özellikler Bölümü */
+.ozellikler-bolumu {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.bolum-baslik {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.bolum-baslik:after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ozellik-kutu {
+    background-color: var(--light-text);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.ozellik-kutu:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.ozellik-ikon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--light-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    font-size: 28px;
+}
+
+.ozellik-baslik {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Hakkımızda Bölümü */
+.hakkimizda-bolumu {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hakkimizda-gorsel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.hakkimizda-gorsel:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--light-bg);
+    z-index: -1;
+}
+
+.hakkimizda-gorsel:after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.hakkimizda-gorsel img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.hakkimizda-icerik {
+    padding: 20px;
+}
+
+.hakkimizda-baslik {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.hakkimizda-baslik:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    left: 0;
+}
+
+.hakkimizda-metin {
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+    color: #555;
+}
+
+/* Vizyonumuz Bölümü */
+.vizyon-bolumu {
+    background: linear-gradient(180deg, #EBF5FB 0%, #D6EAF8 100%);
+    padding: 80px 0;
+    position: relative;
+}
+
+.vizyon-kart {
+    background-color: var(--light-text);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.vizyon-ikon {
+    font-size: 40px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.vizyon-kart-baslik {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.wave-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,202.7C672,213,768,203,864,176C960,149,1056,107,1152,90.7C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat;
+    background-size: cover;
+}
+
+/* Projeler Bölümü */
+.urunler-bolumu {
+    padding: 80px 0;
+}
+
+.urun-kart {
+    background-color: var(--light-text);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    transition: var(--transition);
+}
+
+.urun-kart:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.urun-gorsel {
+    position: relative;
+    overflow: hidden;
+}
+
+.urun-gorsel img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.urun-kart:hover .urun-gorsel img {
+    transform: scale(1.05);
+}
+
+.urun-etiket {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.urun-icerik {
+    padding: 25px;
+}
+
+.urun-baslik {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.urun-metin {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.urun-link {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.urun-link:hover {
+    color: var(--primary-color);
+}
+
+.urun-link i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.urun-link:hover i {
+    transform: translateX(5px);
+}
+
+/* CTA Bölümü */
+.cta-bolumu {
+    background: linear-gradient(135deg, #2c5282 0%, #1e3a5f 50%, #1B2A4E 100%);
+    padding: 80px 0;
+    color: var(--light-text);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-icerik {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-baslik {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-metin {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(93, 173, 226, 0.15);
+    filter: blur(40px);
+}
+
+.glow-1 {
+    top: -150px;
+    left: -100px;
+}
+
+.glow-2 {
+    bottom: -150px;
+    right: -100px;
+    background-color: rgba(231, 76, 60, 0.1);
+}
+
+/* Sayılar Bölümü */
+.sayilar-bolumu {
+    padding: 80px 0;
+}
+
+.sayac {
+    text-align: center;
+}
+
+.sayac-ikon {
+    font-size: 40px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.sayac-deger {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Animasyonlar */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .ana-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--light-text);
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .ana-nav.active {
+        display: block;
+    }
+    
+    .ana-nav .nav-listesi {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .mobil-menu-acma {
+        display: block;
+    }
+
+    .hero-baslik {
+        font-size: 2.5rem;
+    }
+    .hero-alt-baslik {
+        font-size: 1.1rem;
+    }
+    .hakkimizda-gorsel {
+        margin-bottom: 30px;
+    }
+    .vizyon-kart {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-bolumu {
+        padding: 60px 0;
+    }
+    .hero-gorsel {
+        margin-top: 40px;
+    }
+    .hero-baslik {
+        font-size: 2rem;
+    }
+    .bolum-baslik {
+        font-size: 1.8rem;
+    }
+    .cta-baslik {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,695 @@
+:root {
+    --primary-color: #1B2A4E;
+    --secondary-color: #E74C3C;
+    --accent-color: #5DADE2;
+    --light-bg: #EBF5FB;
+    --dark-text: #0D1B2A;
+    --light-text: #fff;
+    --shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    background-color: #fff;
+    color: var(--dark-text);
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.iletisim-hero {
+    background: linear-gradient(195deg, #1e3a5f 0%, #2c5282 50%, #1B2A4E 100%);
+    color: var(--light-text);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.iletisim-baslik {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.iletisim-alt-baslik {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInUp 1s ease 0.2s;
+    animation-fill-mode: both;
+}
+.iletisim-bilgileri {
+    padding: 70px 0;
+    background-color: #f9f9f9;
+}
+
+.iletisim-kutu {
+    background-color: var(--light-text);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin-bottom: 30px;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.iletisim-kutu:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.iletisim-ikon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--light-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.iletisim-kutu h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--dark-text);
+}
+
+.iletisim-kutu p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.iletisim-formu-bolumu {
+    padding: 70px 0;
+    background-color: #fff;
+}
+
+.iletisim-form-container {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.form-baslik {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--dark-text);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.form-baslik:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    left: 0;
+    transition: var(--transition);
+}
+.form-baslik:hover::after {
+    width: 43%;
+}
+
+
+.form-kontrol {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-kontrol:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(127, 179, 213, 0.1);
+}
+
+textarea.form-kontrol {
+    height: auto;
+    resize: none;
+}
+
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.form-check-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.gonder-btn {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gonder-btn i {
+    margin-left: 8px;
+}
+
+.gonder-btn:hover {
+    background-color: #6ca0c2;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Harita */
+.iletisim-harita {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.harita-container {
+    height: 300px;
+    overflow: hidden;
+}
+
+.harita-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.harita-bilgi {
+    padding: 25px;
+}
+
+.harita-bilgi h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--dark-text);
+}
+
+.harita-bilgi p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.sosyal-medya {
+    display: flex;
+    gap: 15px;
+}
+
+.sosyal-ikon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.sosyal-ikon:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    transform: translateY(-3px);
+}
+
+.bolum-baslik {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--dark-text);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.bolum-baslik:after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: var(--transition);
+}
+.bolum-baslik:hover::after {
+    width: 26%;
+}
+
+.accordion-div{
+    margin-bottom: 90px;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.accordion-button {
+    background-color: white;
+    color: var(--dark-text);
+    font-weight: 600;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+.accordion-button::after {
+    border-radius: 50%;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Bülten Bölümü */
+.bulten-bolumu {
+    padding: 70px 0;
+    background-color: #fff;
+}
+
+.bulten-kutusu {
+    background: linear-gradient(135deg, var(--primary-color), #5d9cbf);
+    border-radius: 15px;
+    padding: 40px;
+    color: var(--light-text);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bulten-kutusu h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.bulten-kutusu p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.bulten-form .input-group {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bulten-form .form-kontrol {
+    border: none;
+    height: 50px;
+    background: transparent;
+    padding-left: 20px;
+    border-radius: 50px 0 0 50px;
+}
+
+.bulten-form .form-kontrol:focus {
+    box-shadow: none;
+}
+
+.abone-btn {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.abone-btn:hover {
+    background-color: #ff8c5a;
+}
+
+/* Animasyonlar */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .iletisim-form-container, .iletisim-harita {
+        margin-bottom: 30px;
+    }
+    
+    .iletisim-baslik {
+        font-size: 2.2rem;
+    }
+    
+    .iletisim-form-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .iletisim-hero {
+        padding: 60px 0;
+    }
+    
+    .iletisim-baslik {
+        font-size: 2rem;
+    }
+    
+    .iletisim-alt-baslik {
+        font-size: 1rem;
+    }
+    
+    .bulten-kutusu {
+        padding: 30px;
+    }
+    
+    .bulten-form .input-group {
+        flex-direction: column;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .bulten-form .form-kontrol {
+        border-radius: 50px;
+        margin-bottom: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .abone-btn {
+        width: 100%;
+    }
+}
+
+/* Gelişmiş Stillemeler */
+.iletisim-kutu:hover .iletisim-ikon {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    transform: rotate(360deg);
+    transition: transform 0.5s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Form Animasyonları */
+.form-kontrol:focus {
+    transform: translateY(-2px);
+}
+
+/* Aktif Durum Stilleri */
+.gonder-btn:active {
+    transform: scale(0.98);
+}
+
+.sosyal-ikon:active {
+    transform: scale(0.9);
+}
+
+/* Safari ve Chrome için geçiş efekti desteği */
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        .iletisim-kutu,
+        .sosyal-ikon,
+        .gonder-btn,
+        .abone-btn {
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+/* Özel Scrollbar Stilleme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5d9cbf;
+}
+
+/* Bülten Abone Formunun Gelişmiş Stilleri */
+.bulten-form .input-group {
+    overflow: hidden;
+}
+
+.bulten-form .form-kontrol::placeholder {
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.bulten-form .form-kontrol:focus::placeholder {
+    color: #bbb;
+}
+
+/* Dokunmatik Cihazlar İçin Hover Efekti Düzeltmeleri */
+@media (hover: none) {
+    .iletisim-kutu:hover,
+    .sosyal-ikon:hover,
+    .gonder-btn:hover,
+    .abone-btn:hover {
+        transform: none;
+    }
+}
+
+/* Form Elementlerinin Daha İyi Görünürlüğü */
+.form-kontrol::placeholder {
+    opacity: 0.7;
+}
+
+.form-kontrol:focus::placeholder {
+    opacity: 0.5;
+}
+
+/* Harita Kısmı İçin Gelişmiş Stillemeler */
+.harita-container {
+    position: relative;
+}
+
+.harita-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0));
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Sayfa Yükleme Animasyonu */
+.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.page-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--light-bg);
+    border-top: 5px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Tıklama Efekti */
+.click-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.click-effect::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: inherit;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.click-effect:active::after {
+    transform: scale(1);
+    opacity: 1;
+    transition: 0s;
+}
+
+/* İletişim Kutuları İçin Gelişmiş Görünüm */
+.iletisim-kutu {
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iletisim-kutu:hover {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* Erişilebilirlik İyileştirmeleri */
+.form-check-input:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.sosyal-ikon:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Açılır Menü Stilleri */
+.form-kontrol option {
+    padding: 10px;
+}
+
+/* Başlık Vurgusu */
+.iletisim-baslik strong {
+    color: var(--secondary-color);
+}
+
+/* Görsel Geliştirmeler */
+.iletisim-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Görsel Geri Bildirim Geliştirmeleri */
+.form-kontrol.is-valid {
+    border-color: var(--accent-color);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%238BC34A' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.form-kontrol.is-invalid {
+    border-color: #dc3545;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* Print Medya Sorguları */
+@media print {
+    .iletisim-hero,
+    .bulten-bolumu,
+    .sekiller,
+    .sosyal-medya {
+        display: none !important;
+    }
+    
+    .iletisim-bilgileri,
+    .iletisim-formu-bolumu,
+    .sss-bolumu {
+        padding: 20px 0 !important;
+    }
+    
+    .iletisim-kutu,
+    .iletisim-form-container,
+    .iletisim-harita,
+    .accordion-item {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    .harita-container {
+        display: none;
+    }
+    
+    .accordion-button::after {
+        display: none !important;
+    }
+    
+    .accordion-collapse {
+        display: block !important;
+    }
+}

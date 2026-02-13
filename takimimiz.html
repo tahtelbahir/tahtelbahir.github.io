@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahtelbahir - Takımımız</title>
+    <link rel="stylesheet" href="anasayfastil.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="header-styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        body {
+            background-color: #fff;
+            color: #0D1B2A;
+            font-family: Arial, sans-serif;
+        }
+
+        .bolum {
+            padding: 60px 0;
+            background-color: white;
+        }
+
+        .bolum-mavi {
+            background-color: #EBF5FB;
+        }
+
+        .bolum-baslik {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #1B2A4E;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+
+        .gorunur-ol {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .gorunur-ol.goster {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Takım kartları için stiller */
+        .takim-kart {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 50px;
+            border-bottom: 3px solid transparent;
+        }
+
+        .takim-kart:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-bottom: 3px solid #5DADE2;
+        }
+
+        .takim-foto {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #5DADE2, #1B2A4E);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 4px solid #EBF5FB;
+        }
+
+        .takim-foto i {
+            font-size: 50px;
+            color: white;
+        }
+
+        .takim-isim {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1B2A4E;
+            font-size: 1.4rem;
+        }
+
+        .takim-unvan {
+            color: #E74C3C;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .takim-aciklama {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .hero-takim {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 50%, #1B2A4E 100%);
+            color: var(--light-text);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-takim h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-takim p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .takim-container {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-takim">
+        <div class="container">
+            <h1>Takımımız</h1>
+            <p>Su altı roket teknolojileri alanında yenilikçi çözümler geliştiren, farklı disiplinlerden gelen genç
+                mühendis adaylarından oluşan takımımızla tanışın.</p>
+        </div>
+    </section>
+
+    <!-- Takım Üyeleri -->
+    <section class="bolum">
+        <div class="container">
+            <h2 class="bolum-baslik">Takım Üyelerimiz</h2>
+            <div class="row">
+
+                <!-- Zeynep Özen - Takım Kaptanı & Elektronik Birim Kaptanı -->
+                <div class="col-md-4 gorunur-ol takim-container">
+                    <div class="takim-kart">
+                        <div class="takim-foto">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="takim-isim">Zeynep ÖZEN</h3>
+                        <div class="takim-unvan">Takım ve Elektronik Birim Kaptanı</div>
+                        <p class="takim-aciklama">İstanbul Sabahattin Zaim Üniversitesi Elektrik-Elektronik Mühendisliği
+                            2. sınıf öğrencisi. Daha önce İstanbul Üniversitesi Cerrahpaşa Aeronist Aerospace kulübünde
+                            su altı roket yarışmasına hazırlandı ve eğitim teknolojileri kategorisinde LogiKid
+                            projesinde yer aldı.</p>
+                    </div>
+                </div>
+
+                <!-- Ali Emre Şişman - Yazılım Birim Kaptanı -->
+                <div class="col-md-4 gorunur-ol takim-container">
+                    <div class="takim-kart">
+                        <div class="takim-foto">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="takim-isim">Ali Emre ŞİŞMAN</h3>
+                        <div class="takim-unvan">Yazılım Birim Kaptanı</div>
+                        <p class="takim-aciklama">İstanbul Sabahattin Zaim Üniversitesi Bilgisayar Mühendisliği 3. sınıf
+                            öğrencisi. Robotik otonom sistemler üzerine çalışıyor. 2025 Teknofest Doğal Dil İşleme
+                            finalisti. Projemizde yazılım ekibi kaptanlığı yapıyor ve cihazın otomasyon sistemi üzerine
+                            çalışıyor.</p>
+                    </div>
+                </div>
+
+                <!-- Aylin Yılmaz - Yazılım Birimi -->
+                <div class="col-md-4 gorunur-ol takim-container">
+                    <div class="takim-kart">
+                        <div class="takim-foto">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="takim-isim">Aylin YILMAZ</h3>
+                        <div class="takim-unvan">Yazılım Birimi Üyesi</div>
+                        <p class="takim-aciklama">İstanbul Sabahattin Zaim Üniversitesi Yazılım Mühendisliği 1. sınıf
+                            öğrencisi. 2020 yılında insansız kara aracı dalında Teknofest'e katıldı. Takımımıza yazılım
+                            alanında destek sağlıyor.</p>
+                    </div>
+                </div>
+
+                <!-- Sude Aydın - Yazılım Birimi -->
+                <div class="col-md-4 gorunur-ol takim-container">
+                    <div class="takim-kart">
+                        <div class="takim-foto">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="takim-isim">Sude AYDIN</h3>
+                        <div class="takim-unvan">Yazılım Birimi Üyesi</div>
+                        <p class="takim-aciklama">İstanbul Sabahattin Zaim Üniversitesi Bilgisayar Mühendisliği 1. sınıf
+                            öğrencisi. Projenin yazılım biriminde görev alıyor. Algoritmik süreçlerin oluşturulması ve
+                            sistem mantığının belirlenmesi aşamalarında katkı sağlıyor.</p>
+                    </div>
+                </div>
+
+                <!-- Emin Bera Kazanç - Mekanik Birimi -->
+                <div class="col-md-4 gorunur-ol takim-container">
+                    <div class="takim-kart">
+                        <div class="takim-foto">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="takim-isim">Emin Bera KAZANÇ</h3>
+                        <div class="takim-unvan">Mekanik Birimi Üyesi</div>
+                        <p class="takim-aciklama">Yıldız Teknik Üniversitesi Makine Mühendisliği 3. sınıf öğrencisi. Su
+                            altı aracının mekanik hesaplamaları, tasarım & modellemesi ve genel analizleri konusunda
+                            çalışıyor.</p>
+                    </div>
+                </div>
+
+                <!-- Kerem Akarsu - Mekanik Birimi -->
+                <div class="col-md-4 gorunur-ol takim-container">
+                    <div class="takim-kart">
+                        <div class="takim-foto">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="takim-isim">Kerem AKARSU</h3>
+                        <div class="takim-unvan">Mekanik Birimi Üyesi</div>
+                        <p class="takim-aciklama">Boğaziçi Üniversitesi Makine Mühendisliği 3. sınıf öğrencisi. Takımın
+                            mekanik bölümünde görev alıyor.</p>
+                    </div>
+                </div>
+
+                <!-- Hamza Kaygısız - Elektronik Birimi -->
+                <div class="col-md-4 gorunur-ol takim-container">
+                    <div class="takim-kart">
+                        <div class="takim-foto">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="takim-isim">Hamza KAYGISIZ</h3>
+                        <div class="takim-unvan">Elektronik Birimi Üyesi</div>
+                        <p class="takim-aciklama">Elektrik-Elektronik Mühendisliği 2. sınıf öğrencisi. Gömülü sistemler
+                            alanına ilgi duyuyor. Daha önce eğitim teknolojisi alanında yarışmaya katıldı. Projemizde
+                            elektronik bölümünde yer alıyor.</p>
+                    </div>
+                </div>
+
+                <!-- Furkan Şahinoğlu - Elektronik Birimi -->
+                <div class="col-md-4 gorunur-ol takim-container">
+                    <div class="takim-kart">
+                        <div class="takim-foto">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="takim-isim">Furkan ŞAHİNOĞLU</h3>
+                        <div class="takim-unvan">Elektronik Birimi Üyesi</div>
+                        <p class="takim-aciklama">İstanbul Beykent Üniversitesi Elektrik-Elektronik Mühendisliği 4.
+                            sınıf öğrencisi. Projedeki elektronik birimi çalışmalarında destek veriyor.</p>
+                    </div>
+                </div>
+
+                <!-- Eslem Altay - Elektronik Birimi -->
+                <div class="col-md-4 gorunur-ol takim-container">
+                    <div class="takim-kart">
+                        <div class="takim-foto">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="takim-isim">Eslem ALTAY</h3>
+                        <div class="takim-unvan">Elektronik Birimi Üyesi</div>
+                        <p class="takim-aciklama">İstanbul Sabahattin Zaim Üniversitesi Bilgisayar Mühendisliği 1. sınıf
+                            öğrencisi. Takımımızda elektronik bölümünde görev alıyor.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Scroll efekti için
+        function gorunurluguKontrolEt() {
+            $('.gorunur-ol').each(function () {
+                var elemanPozisyon = $(this).offset().top;
+                var pencerePozisyon = $(window).scrollTop();
+                var pencereYukseklik = $(window).height();
+
+                if (elemanPozisyon < pencerePozisyon + pencereYukseklik - 100) {
+                    $(this).addClass('goster');
+                }
+            });
+        }
+
+        $(window).on('scroll', gorunurluguKontrolEt);
+        $(window).on('load', gorunurluguKontrolEt);
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+
+                    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+                    const mainNav = document.querySelector('.main-nav');
+
+                    if (mobileMenuToggle && mainNav) {
+                        mobileMenuToggle.addEventListener('click', function () {
+                            mainNav.classList.toggle('active');
+                        });
+                    }
+
+                    window.addEventListener('scroll', function () {
+                        const header = document.querySelector('.header');
+                        if (window.scrollY > 50) {
+                            header.classList.add('scrolled');
+                        } else {
+                            header.classList.remove('scrolled');
+                        }
+                    });
+                })
+                .catch(error => console.error('Header yüklenirken hata oluştu:', error));
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                .catch(error => console.error('Footer yüklenirken hata oluştu:', error));
+        });
+    </script>
+</body>
+
+</html>

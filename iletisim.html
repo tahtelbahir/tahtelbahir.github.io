@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Tahtelbahir</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="iletisimstil.css">
+    <link rel="stylesheet" href="header-styles.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+    
+    <!-- İletişim Hero Bölümü -->
+    <section class="iletisim-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="iletisim-baslik">Bizimle İletişime Geçin</h1>
+                    <p class="iletisim-alt-baslik">Sorularınızı yanıtlamak, projemiz hakkında bilgi vermek ve işbirliği fırsatlarını değerlendirmek için buradayız.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Bilgileri -->
+    <section class="iletisim-bilgileri">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="iletisim-kutu fade-in">
+                        <div class="iletisim-ikon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Adresimiz</h3>
+                        <p>İstanbul Sabahattin Zaim Üniversitesi<br>IZU Teknopark</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="iletisim-kutu fade-in">
+                        <div class="iletisim-ikon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Üniversite</h3>
+                        <p>İstanbul Sabahattin Zaim Üniversitesi<br>IEEE Kulübü RAS Komitesi</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="iletisim-kutu fade-in">
+                        <div class="iletisim-ikon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>E-Posta</h3>
+                        <p>tahtelbahir34@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Formu -->
+    <section class="iletisim-formu-bolumu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="iletisim-form-container fade-in">
+                        <h2 class="form-baslik">Mesaj Gönderin</h2>
+                        <form id="iletisim-formu">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-kontrol" placeholder="Adınız" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-kontrol" placeholder="Soyadınız" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-kontrol" placeholder="E-posta Adresiniz" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-kontrol" placeholder="Telefon Numaranız">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-kontrol">
+                                    <option selected disabled>Konu Seçiniz</option>
+                                    <option>Proje Hakkında Bilgi</option>
+                                    <option>Takıma Katılmak İstiyorum</option>
+                                    <option>Sponsorluk</option>
+                                    <option>İşbirliği Önerisi</option>
+                                    <option>Medya ve Basın</option>
+                                    <option>Diğer</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-kontrol" rows="5" placeholder="Mesajınız" required></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="kvkk" required>
+                                <label class="form-check-label" for="kvkk">KVKK aydınlatma metnini okudum ve kabul ediyorum.</label>
+                            </div>
+                            <button type="submit" class="gonder-btn">Mesajı Gönder <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="iletisim-harita fade-in">
+                        <div class="harita-container">
+                            <img src="tahtelbahir_logo.jpeg" alt="Tahtelbahir Logo" class="harita-placeholder">
+                        </div>
+                        <div class="harita-bilgi">
+                            <h3>Projemizi Takip Edin</h3>
+                            <p>TEKNOFEST 2026 Su Altı Roket Yarışması yolculuğumuzu sosyal medya hesaplarımızdan takip edebilir, gelişmelerden haberdar olabilirsiniz.</p>
+                            <div class="sosyal-medya">
+                                <a href="https://www.instagram.com/tahtelbahir_/" class="sosyal-ikon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://nsosyal.com/tahtelbahir34" class="sosyal-ikon" aria-label="N Sosyal"><i class="fa-solid fa-n"></i></a>
+                                <a href="#" class="sosyal-ikon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="sosyal-ikon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bolum bg-white">
+        <div class="container">
+            <div class="accordion-div">
+            <h2 class="bolum-baslik text-center">Sık Sorulan Sorular</h2>
+
+            <div class="accordion mt-5" id="accordionFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Tahtelbahir projesi nedir?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Tahtelbahir, İstanbul Sabahattin Zaim Üniversitesi IEEE Kulübü bünyesinde TEKNOFEST 2026 Su Altı Roket Yarışması için geliştirilen otonom su altı aracı projesidir. Yerli su altı teknolojileri geliştirerek Türkiye'nin bu alandaki kabiliyetlerine katkı sağlamayı hedefliyoruz.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Takıma nasıl katılabilirim?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Takımımıza katılmak için yukarıdaki iletişim formunu "Takıma Katılmak İstiyorum" konusu ile doldurabilir veya tahtelbahir34@gmail.com adresine mail gönderebilirsiniz. Mekanik, elektronik ve yazılım alanlarında öğrenci arkadaşlarımızı arıyoruz. Hangi üniversiteden olduğunuz önemli değil, önemli olan hevesli ve çalışkan olmanız!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Sponsorluk veya destek sağlamak istiyorum
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Projemize sponsor olmak veya destek sağlamak isteyen şirket ve kurumlar ,iletişim formunu "Sponsorluk" konusu ile doldurabilir veya tahtelbahir34@gmail.com adresine detaylı bilgi için mail gönderin. Maddi destek yanında teknik ekipman, malzeme veya danışmanlık desteği için minnettar oluruz.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Yarışma ne zaman ve nerede?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                TEKNOFEST 2026 Su Altı Roket Yarışması'nın kesin tarihi ve yeri henüz açıklanmadı. Açıklandığında sosyal medya hesaplarımızdan duyurularımızı paylaşacağız. Yarışma takvimine göre 2026 yılı içerisinde gerçekleşecek.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header yükleme
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+
+                    // Header yüklendikten sonra mobile menu toggle fonksiyonunu ekle
+                    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+                    const mainNav = document.querySelector('.main-nav');
+
+                    if (mobileMenuToggle && mainNav) {
+                        mobileMenuToggle.addEventListener('click', function () {
+                            mainNav.classList.toggle('active');
+                        });
+                    }
+
+                    // Scroll event for header
+                    window.addEventListener('scroll', function () {
+                        const header = document.querySelector('.header');
+                        if (window.scrollY > 50) {
+                            header.classList.add('scrolled');
+                        } else {
+                            header.classList.remove('scrolled');
+                        }
+                    });
+                })
+                .catch(error => console.error('Header yüklenirken hata oluştu:', error));
+            
+            // Footer yükleme
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                .catch(error => console.error('Footer yüklenirken hata oluştu:', error));
+            
+            // Animasyonlar için Görünürlük Denetimi
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, { threshold: 0.2 });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Form gönderimi
+            const iletisimFormu = document.getElementById('iletisim-formu');
+            if (iletisimFormu) {
+                iletisimFormu.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Mesajınız gönderildi. En kısa sürede size dönüş yapacağız.');
+                    iletisimFormu.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
